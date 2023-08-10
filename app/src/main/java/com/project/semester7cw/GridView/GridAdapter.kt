@@ -22,12 +22,13 @@ class GridAdapter(var cxt: Context, var list: ArrayList<GridModel>): RecyclerVie
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GridHolder {
-        val v: View = LayoutInflater.from(cxt).inflate(R.layout.activity_grid_view_main, parent)
+        val v: View = LayoutInflater.from(cxt).inflate(R.layout.grid_custom_layout, parent, false)
         return GridHolder(v)
     }
 
     override fun onBindViewHolder(holder: GridHolder, position: Int) {
-//        holder.gridIV.text = list[position].name
+        holder.gridTV.text = list[position].gridTV
+        holder.gridIV.setImageResource(list[position].gridIV)
     }
 
     override fun getItemCount(): Int {
