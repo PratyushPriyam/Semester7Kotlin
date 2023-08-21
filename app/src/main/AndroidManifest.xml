@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Semester7CW"
         tools:targetApi="31">
         <activity
-            android:name=".GridView.GridViewMain"
+            android:name=".AsyncAwait.AsyncMain"
             android:exported="true" >
 
             <intent-filter>
@@ -25,13 +25,16 @@
 
         </activity>
         <activity
-            android:name=".RecyclerView.ReecyclerViewMain"
+            android:name=".GridView.GridViewMain"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".RecyclerView.ReecyclerViewMain"
             android:exported="true"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
