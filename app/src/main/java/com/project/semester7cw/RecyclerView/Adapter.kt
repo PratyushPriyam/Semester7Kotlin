@@ -8,14 +8,18 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.project.semester7cw.R
 
-class Adapter(var list: List<Model>): RecyclerView.Adapter<Adapter.MyHolder>() {
+class Adapter(var list: MutableList<Model>): RecyclerView.Adapter<Adapter.MyHolder>() {
     class MyHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var title = itemView.findViewById<TextView>(R.id.title)
         var genre = itemView.findViewById<TextView>(R.id.genre)
         var year = itemView.findViewById<TextView>(R.id.year)
         var btn = itemView.findViewById<Button>(R.id.btn)
-    }
 
+    }
+    fun removeItem(position: Int) {
+        list.removeAt(position)
+        notifyItemRemoved(position)
+    }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyHolder {
         var layoutInflater = LayoutInflater.from(parent.context).inflate(R.layout.recycler_view_layout, parent, false)
 

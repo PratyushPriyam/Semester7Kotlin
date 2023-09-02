@@ -44,17 +44,30 @@ class MainActivity : AppCompatActivity() {
         list.add(ListModelClass("Pratyush", R.drawable.ic_launcher_background, false))
         list.add(ListModelClass("Pratyush", R.drawable.ic_launcher_background, false))
 
+//        btn.setOnClickListener {
+//            var str = "Check items: \n"
+//            var count = list.count()
+//            for(i in 0 until count) {
+//                var a = CustomListViewClass(this, R.layout.custom_lisi_view_xml, list)
+//                if(a.isChecked(i)) {
+//                    str+= """$i""".trimIndent()
+//                }
+//            }
+//            Toast.makeText(this, str, Toast.LENGTH_SHORT).show()
+//        }
         btn.setOnClickListener {
-            var str = "Check items: \n"
-            var count = list.count()
-            for(i in 0 until count) {
-                var a = CustomListViewClass(this, R.layout.custom_lisi_view_xml, list)
-                if(a.isChecked(i)) {
-                    str+= """$i""".trimIndent()
+            var count = 0;
+            var items = ""
+            for(i in 0 .. list.size-1) {
+                if(list[i].isChecked()) {
+                    items += list[i].title
+                    count++
                 }
             }
-            Toast.makeText(this, str, Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "count: ${count}", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "items : ${items}", Toast.LENGTH_SHORT).show()
         }
+
 
         listView.adapter = CustomListViewClass(this, R.layout.custom_lisi_view_xml, list)
 

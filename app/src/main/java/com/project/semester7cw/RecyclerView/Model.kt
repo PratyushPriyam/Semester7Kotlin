@@ -5,6 +5,8 @@ class Model(title: String?, genre: String?, year: String?) {
     private var genre: String
     private var year: String
 
+
+
     init {
         this.title = title!!
         this.genre = genre!!
