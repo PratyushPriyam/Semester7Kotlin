@@ -1,4 +1,4 @@
-package com.project.semester7cw.Services.BoundService
+package com.project.semester7cw.Services.UnBoundService
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -10,12 +10,12 @@ import android.os.IBinder
 import androidx.core.app.NotificationCompat
 import com.project.semester7cw.R
 
-class BoundServiceHelperClass: Service() {
+class UnBoundServiceHelperClass: Service() {
     val channel_id = "Foreground Service Using Kotlin"
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         val input = intent?.getStringExtra("inputExtra")
         createNotificationChannel()
-        val notificationIntent = Intent(this, BoundServiceHelperClass::class.java)
+        val notificationIntent = Intent(this, UnBoundServiceHelperClass::class.java)
         val pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0)
         val notification = NotificationCompat.Builder(this, channel_id)
             .setContentTitle("Foreground Service")

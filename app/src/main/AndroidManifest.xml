@@ -5,6 +5,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+
 
     <application
         android:allowBackup="true"
@@ -17,26 +22,40 @@
         android:theme="@style/Theme.Semester7CW"
         tools:targetApi="31">
         <activity
-            android:name=".Services.BoundService.BoundServiceMain"
+            android:name=".Broadcast.BatteryStatusMain"
             android:exported="true" >
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
         </activity>
         <activity
-            android:name=".Services.UnboundService.UnboundedServicesMain"
+            android:name=".Broadcast.WiFiMain"
             android:exported="true">
 
-        </activity> <!-- Registering Unbound Service -->
-        <service android:name=".Services.UnboundService.UnboundServiceHelperClass" />
+        </activity>
+        <activity
+            android:name=".DynamicBroadcastService.DBRMain"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Services.UnBoundService.UnBoundServiceMain"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".Services.UnBoundService.UnBoundServiceMain" -->
+        <!-- android:exported="true" > -->
+        <!--  -->
+        <!-- </activity> -->
+        <activity
+            android:name=".Services.Service.ServicesMain"
+            android:exported="true" /> <!-- Registering Unbound Service -->
+        <service android:name=".Services.Service.ServiceHelperClass" />
 
         <activity
             android:name=".AsyncAwait.ImageDownloadAsync.DownloadImage"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".AsyncAwait.AsyncMain"
             android:exported="true" />
@@ -49,7 +68,14 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
-        <service android:name=".Services.BoundService.BoundServiceHelperClass"/>
+        <activity
+            android:name="com.project.semester7cw.BroadcasrReceiverAndJobService.BRAJSMain"
+            android:exported="true" />
+
+        <service android:name=".Services.UnBoundService.UnBoundServiceHelperClass" />
+        <service android:name=".Services.BoundService.BoundHelper" />
+
+        <receiver android:name=".BroadcasrReceiverAndJobService.BRAJSBroadcastReceiver" />
     </application>
 
 </manifest>
