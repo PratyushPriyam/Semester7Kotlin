@@ -40,23 +40,12 @@ class ReecyclerViewMain : AppCompatActivity() {
         val adapter = Adapter(arrList)
         recView.adapter = adapter
 
-        val itemTouchHelper = ItemTouchHelper(object : ItemTouchHelper.SimpleCallback(
-            0, ItemTouchHelper.RIGHT
-        ) {
-            override fun onMove(
-                recyclerView: RecyclerView,
-                viewHolder: RecyclerView.ViewHolder,
-                target: RecyclerView.ViewHolder
-            ): Boolean {
-                return false
-            }
+        val itemTouchHelper = ItemTouchHelper(object : ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.RIGHT) {
+            override fun onMove(recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder, target: RecyclerView.ViewHolder): Boolean = false
 
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
                 if (direction == ItemTouchHelper.RIGHT) {
-                    // Get the position of the item being swiped
-                    val position = viewHolder.adapterPosition
-                    // Remove the item from the dataset
-                    adapter.removeItem(position)
+                    adapter.removeItem(viewHolder.adapterPosition)
                 }
             }
         })

@@ -27,16 +27,16 @@ class CustomListViewClass(var cxt: Context, var resource: Int, var objects: Muta
 
         //--------------------------------CHECKBOX START-------------------------------------
         cb = view.findViewById<CheckBox>(R.id.checkBox)
-        cb.setChecked(objects.get(position).checked)
-        cb.setTag(position)
+        cb.isChecked = objects[position].checked
+        cb.tag = position
 
-        var itemStr = objects.get(position).title
+        var itemStr = objects[position].title
         cb.setOnClickListener {
-            val newState: Boolean = !objects.get(position).isChecked()
-            objects.get(position).checked = newState
+            val newState: Boolean = !objects[position].isChecked()
+            objects[position].checked = newState
             Toast.makeText(cxt, itemStr + "Selected with states: " + newState, Toast.LENGTH_SHORT)
                 .show()
-            cb.setChecked(isChecked(position))
+            cb.isChecked = isChecked(position)
         }
         //--------------------------------CHECKBOX END-------------------------------------
 

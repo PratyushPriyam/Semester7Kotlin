@@ -34,19 +34,26 @@
 
         </activity>
         <activity
-            android:name=".DynamicBroadcastService.DBRMain"
-            android:exported="true"></activity>
+            android:name=".DynamicBroadcastService.AirplaneModeMain"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!--                <action android:name="android.intent.action.BATTERY_LOW"/>-->
+                <!--                <action android:name="android.intent.action.BATTERY_OKAY"/>-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name=".Services.UnBoundService.UnBoundServiceMain"
+            android:name=".Services.ForegroundService.ForegroundServiceMain"
             android:exported="false" /> <!-- <activity -->
         <!-- android:name=".Services.UnBoundService.UnBoundServiceMain" -->
         <!-- android:exported="true" > -->
         <!--  -->
         <!-- </activity> -->
         <activity
-            android:name=".Services.Service.ServicesMain"
+            android:name=".Services.BackgroundService.BackgroundServicesMain"
             android:exported="true" /> <!-- Registering Unbound Service -->
-        <service android:name=".Services.Service.ServiceHelperClass" />
+        <service android:name=".Services.BackgroundService.BackgroundServiceHelperClass" />
 
         <activity
             android:name=".AsyncAwait.ImageDownloadAsync.DownloadImage"
@@ -60,12 +67,7 @@
         <activity
             android:name=".RecyclerView.ReecyclerViewMain"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <!--                <action android:name="android.intent.action.BATTERY_LOW"/>-->
-                <!--                <action android:name="android.intent.action.BATTERY_OKAY"/>-->
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         <activity
             android:name=".MainActivity"
@@ -77,7 +79,7 @@
             android:name="com.project.semester7cw.BroadcasrReceiverAndJobService.BRAJSMain"
             android:exported="true" />
 
-        <service android:name=".Services.UnBoundService.UnBoundServiceHelperClass" />
+        <service android:name=".Services.ForegroundService.ForegroundServiceHelperClass" />
         <service android:name=".Services.BoundService.BoundHelper" />
 
         <receiver android:name=".BroadcasrReceiverAndJobService.BRAJSBroadcastReceiver" />
