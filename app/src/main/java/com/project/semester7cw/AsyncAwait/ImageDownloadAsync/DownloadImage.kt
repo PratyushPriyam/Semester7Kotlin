@@ -50,7 +50,7 @@ class DownloadImage : AppCompatActivity() {
                 inputStream = conn.inputStream
                 val options = BitmapFactory.Options()
                 options.inPreferredConfig = Bitmap.Config.RGB_565
-                bitmap = BitmapFactory.decodeStream(`inputStream`, null, options)
+                bitmap = BitmapFactory.decodeStream(inputStream, null, options)
             }
             catch (e: IOException) {
                 e.printStackTrace()
@@ -60,13 +60,8 @@ class DownloadImage : AppCompatActivity() {
 
         override fun onPostExecute(result: Bitmap?) {
             super.onPostExecute(result)
-            if(downloadImage != null) {
-                progressDialog.hide()
-                downloadImage.setImageBitmap(bitmap)
-            }
-            else {
-                progressDialog.show()
-            }
+            progressDialog.hide()
+            downloadImage.setImageBitmap(bitmap)
         }
     }
 }

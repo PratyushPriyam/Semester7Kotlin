@@ -12,7 +12,7 @@ class AirplaneModeHelper: BroadcastReceiver() {
             Toast.makeText(context, "Airplane Mode Activated", Toast.LENGTH_SHORT).show()
         }
         if(!isAirplaneModeEnabled) {
-            Toast.makeText(context, "Airplane Mode Deactivated", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Airplane Mode Deactivated ", Toast.LENGTH_SHORT).show()
         }
     }
 }

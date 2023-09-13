@@ -24,6 +24,7 @@ class BackgroundServiceHelperClass: Service() {
         return super.stopService(name)
     }
 
+
     override fun onBind(intent: Intent?): IBinder? {
         return null
     }

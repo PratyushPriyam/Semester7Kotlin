@@ -46,7 +46,7 @@ class CustomListViewClass(var cxt: Context, var resource: Int, var objects: Muta
 
         switchBtn.tag = position
         switchBtn.setOnClickListener {
-            val itemSelected = objects.get(it.tag as Int)
+            val itemSelected = objects[it.tag as Int]
             objects.remove(itemSelected)
             notifyDataSetChanged()
         }
