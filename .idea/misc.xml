@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/drawable/bg_layout.xml" value="0.2375" />
+        <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/drawable/button_style.xml" value="0.2385" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_async_main.xml" value="0.21285140562248997" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_battery_status_main.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_bound_service_main.xml" value="0.19444444444444445" />

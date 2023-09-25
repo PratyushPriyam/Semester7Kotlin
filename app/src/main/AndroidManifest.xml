@@ -17,18 +17,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Semester7CW"
+        android:theme="@style/CustomStyle"
         tools:targetApi="31">
         <activity
             android:name=".CardView.CardViewMain"
             android:exported="true" >
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <!-- <action android:name="android.intent.action.BATTERY_LOW"/> -->
-                <!-- <action android:name="android.intent.action.BATTERY_OKAY"/> -->
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
 
         </activity>
         <activity
@@ -71,7 +66,16 @@
             android:exported="true" />
         <activity
             android:name=".GridView.GridViewMain"
-            android:exported="true" />
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- <action android:name="android.intent.action.BATTERY_LOW"/> -->
+                <!-- <action android:name="android.intent.action.BATTERY_OKAY"/> -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
         <activity
             android:name=".RecyclerView.ReecyclerViewMain"
             android:exported="true" />
