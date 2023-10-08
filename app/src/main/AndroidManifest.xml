@@ -20,20 +20,39 @@
         android:theme="@style/CustomStyle"
         tools:targetApi="31">
         <activity
-            android:name=".CardView.CardViewMain"
+            android:name=".RoomDataBase.RoomDatabaseMain"
             android:exported="true" >
 
-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- <action android:name="android.intent.action.BATTERY_LOW"/> -->
+                <!-- <action android:name="android.intent.action.BATTERY_OKAY"/> -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
+        <activity
+            android:name=".SQLiteDatabase.EmployeeSalary.EmployeeSalaryMain"
+            android:exported="false" />
+        <activity
+            android:name=".SQLiteDatabase.SQLMain"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- <action android:name="android.intent.action.BATTERY_LOW"/> -->
+                <!-- <action android:name="android.intent.action.BATTERY_OKAY"/> -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CardView.CardViewMain"
+            android:exported="true" />
         <activity
             android:name=".FAB.FABMenu.FABMenuMain"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".FAB.FABMain"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Video.Video"
             android:exported="true" />
@@ -66,16 +85,7 @@
             android:exported="true" />
         <activity
             android:name=".GridView.GridViewMain"
-            android:exported="true" >
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <!-- <action android:name="android.intent.action.BATTERY_LOW"/> -->
-                <!-- <action android:name="android.intent.action.BATTERY_OKAY"/> -->
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".RecyclerView.ReecyclerViewMain"
             android:exported="true" />
