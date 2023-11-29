@@ -8,6 +8,9 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -20,7 +23,7 @@
         android:theme="@style/CustomStyle"
         tools:targetApi="31">
         <activity
-            android:name=".RoomDataBase.RoomDatabaseMain"
+            android:name=".GoogleMaps.GeoCoding.GeoCodingMain"
             android:exported="true" >
 
             <intent-filter>
@@ -32,18 +35,36 @@
 
         </activity>
         <activity
+            android:name=".GoogleMaps.GoogleMapsMain"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".WebView.Dynamic"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".WebView.StaticMain"
+            android:exported="true"></activity> <!-- <activity -->
+        <!-- android:name=".PlacementPortal.PlacementPortalMain" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name="" -->
+        <!-- android:exported="true" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- &lt;!&ndash; <action android:name="android.intent.action.BATTERY_LOW"/> &ndash;&gt; -->
+        <!-- &lt;!&ndash; <action android:name="android.intent.action.BATTERY_OKAY"/> &ndash;&gt; -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
             android:name=".SQLiteDatabase.EmployeeSalary.EmployeeSalaryMain"
             android:exported="false" />
         <activity
             android:name=".SQLiteDatabase.SQLMain"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <!-- <action android:name="android.intent.action.BATTERY_LOW"/> -->
-                <!-- <action android:name="android.intent.action.BATTERY_OKAY"/> -->
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".CardView.CardViewMain"
             android:exported="true" />
@@ -93,7 +114,7 @@
             android:name=".MainActivity"
             android:exported="true" />
         <activity
-            android:name="com.project.semester7cw.BroadcasrReceiverAndJobService.BRAJSMain"
+            android:name=".BroadcasrReceiverAndJobService.BRAJSMain"
             android:exported="true" />
 
         <service android:name=".Services.ForegroundService.ForegroundServiceHelperClass" />

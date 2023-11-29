@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
@@ -12,27 +11,31 @@
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_brajsmain.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_card_view_main.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_download_image.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_dynamic.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_employee_salary_main.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_fabmain.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_fabmenu_main.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_grid_view_main.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_main.xml" value="0.11553784860557768" />
+        <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_placement_portal_main.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_reecycler_view_main.xml" value="0.23229166666666667" />
-        <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_room_database_main.xml" value="0.12449799196787148" />
+        <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_room_database_main.xml" value="0.2" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_sqlmain.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_static_main.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_unbound_main.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_unbounded_services_main.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_video.xml" value="0.16" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/activity_wi_fi_main.xml" value="0.11018518518518519" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/custom_lisi_view_xml.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/grid_custom_layout.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/placement_list_view.xml" value="0.23125" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/recycler_view_layout.xml" value="0.264" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/layout/room_list_item.xml" value="0.23125" />
         <entry key="..\:/Users/praty/AndroidStudioProjects/Semester7CW/app/src/main/res/menu/fab_menu.xml" value="0.23229166666666667" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
